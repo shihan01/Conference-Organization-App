@@ -22,7 +22,7 @@ Session
 
 The session class has following fields:
 
-name = ndb.StringProperty(required=True) - a string property representing the name of the session
+`name = ndb.StringProperty(required=True)` - a string property representing the name of the session
 highlights = ndb.StringProperty() - a text property (as highlights can be a longer text) representing the highlights of the session
 speaker = ndb.StringProperty(repeated=True) - a string property (decided on having just a string property instead of a separate entity) representing the speakers of the session, and there could be multiple speakers
 date = ndb.DateProperty() - a date property (converted in code from user input) representing the date of the session
